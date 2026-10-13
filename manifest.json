@@ -1,7 +1,7 @@
 {
   "format": 1,
-  "manifest_version": 1,
-  "generated": "2026-10-13T12:37:46Z",
+  "manifest_version": 2,
+  "generated": "2026-10-13T16:27:05Z",
   "manifest_url": "https://raw.githubusercontent.com/cad861/hushtype-models/main/manifest.json",
   "models": [
     {
@@ -23,8 +23,8 @@
           "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6"
         }
       ],
-      "total_size": 643854,
-      "released": false
+      "released": true,
+      "total_size": 643854
     },
     {
       "id": "parakeet-tdt-0.6b-v3-int8",
@@ -95,8 +95,8 @@
           "sha256": "d58544679ea4bc6ac563d1f545eb7d474bd6cfa467f0a6e2c1dc1c7d37e3c35d"
         }
       ],
-      "total_size": 670478772,
-      "released": false
+      "released": true,
+      "total_size": 670478772
     },
     {
       "id": "moonshine-tiny-en",
@@ -140,8 +140,8 @@
           "sha256": "6148d7574a6554b7379b633cfd4c4fe5840c3f548d13bc83e00b52dc6fa00abd"
         }
       ],
-      "total_size": 44256550,
-      "released": false
+      "released": true,
+      "total_size": 44256550
     },
     {
       "id": "moonshine-base-en",
@@ -185,8 +185,8 @@
           "sha256": "6148d7574a6554b7379b633cfd4c4fe5840c3f548d13bc83e00b52dc6fa00abd"
         }
       ],
-      "total_size": 141313910,
-      "released": false
+      "released": true,
+      "total_size": 141313910
     },
     {
       "id": "whisper-large-v3-turbo-int8",
@@ -223,8 +223,8 @@
           "sha256": "b34b360dbb493e781e479794586d661700670d65564001f23024971d1f2fa126"
         }
       ],
-      "total_size": 1036613791,
-      "released": false
+      "released": true,
+      "total_size": 1036613791
     },
     {
       "id": "whisper-small-en-int8",
@@ -261,8 +261,55 @@
           "sha256": "306cd27f03c1a714eca7108e03d66b7dc042abe8c258b44c199a7ed9838dd930"
         }
       ],
-      "total_size": 375501079,
-      "released": false
+      "released": true,
+      "total_size": 375501079
+    },
+    {
+      "id": "qwen3-0.6b-q4_k_m",
+      "version": 1,
+      "role": "cleanup",
+      "runtime": "llama.cpp",
+      "licence": "Apache-2.0",
+      "attribution": "Qwen3 0.6B by Alibaba Cloud (Qwen team), Apache 2.0. GGUF quantisation by Unsloth.",
+      "config": {
+        "type": "gguf",
+        "model": "Qwen3-0.6B-Q4_K_M.gguf",
+        "chat_format": "chatml_qwen3"
+      },
+      "files": [
+        {
+          "name": "Qwen3-0.6B-Q4_K_M.gguf",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/qwen3-0.6b-q4_k_m--Qwen3-0.6B-Q4_K_M.gguf",
+          "size": 396705472,
+          "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+        }
+      ],
+      "released": true,
+      "total_size": 396705472
+    },
+    {
+      "id": "qwen3-1.7b-q4_k_m",
+      "version": 1,
+      "role": "cleanup",
+      "runtime": "llama.cpp",
+      "licence": "Apache-2.0",
+      "attribution": "Qwen3 1.7B by Alibaba Cloud (Qwen team), Apache 2.0. GGUF quantisation by Unsloth.",
+      "min_ram_gb": 6,
+      "config": {
+        "type": "gguf",
+        "model": "Qwen3-1.7B-Q4_K_M.gguf",
+        "chat_format": "chatml_qwen3"
+      },
+      "files": [
+        {
+          "name": "Qwen3-1.7B-Q4_K_M.gguf",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/qwen3-1.7b-q4_k_m--Qwen3-1.7B-Q4_K_M.gguf",
+          "size": 1107409472,
+          "sha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897"
+        }
+      ],
+      "released": true,
+      "total_size": 1107409472
     }
   ],
   "tiers": {
