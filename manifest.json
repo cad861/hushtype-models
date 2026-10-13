@@ -1,0 +1,283 @@
+{
+  "format": 1,
+  "manifest_version": 1,
+  "generated": "2026-10-13T12:37:46Z",
+  "manifest_url": "https://raw.githubusercontent.com/cad861/hushtype-models/main/manifest.json",
+  "models": [
+    {
+      "id": "silero-vad",
+      "version": 1,
+      "role": "vad",
+      "runtime": "sherpa-onnx",
+      "licence": "MIT",
+      "attribution": "Silero VAD by Silero Team, MIT licence.",
+      "config": {
+        "type": "silero_vad",
+        "model": "silero_vad.onnx"
+      },
+      "files": [
+        {
+          "name": "silero_vad.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/silero-vad--silero_vad.onnx",
+          "size": 643854,
+          "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6"
+        }
+      ],
+      "total_size": 643854,
+      "released": false
+    },
+    {
+      "id": "parakeet-tdt-0.6b-v3-int8",
+      "version": 1,
+      "role": "final",
+      "runtime": "sherpa-onnx",
+      "licence": "CC-BY-4.0",
+      "attribution": "Parakeet TDT 0.6B v3 by NVIDIA, licensed under CC-BY-4.0. Converted to ONNX int8 by the sherpa-onnx project.",
+      "languages": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "nl",
+        "pl",
+        "pt",
+        "sv",
+        "da",
+        "fi",
+        "el",
+        "cs",
+        "sk",
+        "sl",
+        "hr",
+        "bg",
+        "ro",
+        "hu",
+        "et",
+        "lv",
+        "lt",
+        "mt",
+        "ru",
+        "uk"
+      ],
+      "min_ram_gb": 6,
+      "config": {
+        "type": "transducer",
+        "model_type": "nemo_transducer",
+        "encoder": "encoder.int8.onnx",
+        "decoder": "decoder.int8.onnx",
+        "joiner": "joiner.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "files": [
+        {
+          "name": "encoder.int8.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/parakeet-tdt-0.6b-v3-int8--encoder.int8.onnx",
+          "size": 652184281,
+          "sha256": "acfc2b4456377e15d04f0243af540b7fe7c992f8d898d751cf134c3a55fd2247"
+        },
+        {
+          "name": "decoder.int8.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/parakeet-tdt-0.6b-v3-int8--decoder.int8.onnx",
+          "size": 11845275,
+          "sha256": "179e50c43d1a9de79c8a24149a2f9bac6eb5981823f2a2ed88d655b24248db4e"
+        },
+        {
+          "name": "joiner.int8.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/parakeet-tdt-0.6b-v3-int8--joiner.int8.onnx",
+          "size": 6355277,
+          "sha256": "3164c13fc2821009440d20fcb5fdc78bff28b4db2f8d0f0b329101719c0948b3"
+        },
+        {
+          "name": "tokens.txt",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/parakeet-tdt-0.6b-v3-int8--tokens.txt",
+          "size": 93939,
+          "sha256": "d58544679ea4bc6ac563d1f545eb7d474bd6cfa467f0a6e2c1dc1c7d37e3c35d"
+        }
+      ],
+      "total_size": 670478772,
+      "released": false
+    },
+    {
+      "id": "moonshine-tiny-en",
+      "version": 1,
+      "role": "preview",
+      "runtime": "sherpa-onnx",
+      "licence": "MIT",
+      "attribution": "Moonshine (English) by Useful Sensors, Inc. (Moonshine AI), MIT licence. Only the English models are used; other languages are non-commercial.",
+      "languages": [
+        "en"
+      ],
+      "config": {
+        "type": "moonshine_v2",
+        "encoder": "encoder_model.ort",
+        "merged_decoder": "decoder_model_merged.ort",
+        "tokens": "tokens.txt"
+      },
+      "files": [
+        {
+          "name": "encoder_model.ort",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-tiny-en--encoder_model.ort",
+          "size": 13281600,
+          "sha256": "94e90a4654fc45cdfedb77c4c08e1739f48862998e58fada384b25118134f221"
+        },
+        {
+          "name": "decoder_model_merged.ort",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-tiny-en--decoder_model_merged.ort",
+          "size": 30412256,
+          "sha256": "cf524c4862d36e9e5ab032eddc73637efd822d70e868ac575cf1a46e1e4708a0"
+        },
+        {
+          "name": "tokens.txt",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-tiny-en--tokens.txt",
+          "size": 549350,
+          "sha256": "2870d843e14c1e187bf1913a521562a63b53933814bd7f2145120468f494a049"
+        },
+        {
+          "name": "LICENSE",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-tiny-en--LICENSE",
+          "size": 13344,
+          "sha256": "6148d7574a6554b7379b633cfd4c4fe5840c3f548d13bc83e00b52dc6fa00abd"
+        }
+      ],
+      "total_size": 44256550,
+      "released": false
+    },
+    {
+      "id": "moonshine-base-en",
+      "version": 1,
+      "role": "preview",
+      "runtime": "sherpa-onnx",
+      "licence": "MIT",
+      "attribution": "Moonshine (English) by Useful Sensors, Inc. (Moonshine AI), MIT licence.",
+      "languages": [
+        "en"
+      ],
+      "config": {
+        "type": "moonshine_v2",
+        "encoder": "encoder_model.ort",
+        "merged_decoder": "decoder_model_merged.ort",
+        "tokens": "tokens.txt"
+      },
+      "files": [
+        {
+          "name": "encoder_model.ort",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-base-en--encoder_model.ort",
+          "size": 31326816,
+          "sha256": "7c66495948d0d08ec1af454cd4b5514862ae6511e94712a60e6d83eaec8dc8cf"
+        },
+        {
+          "name": "decoder_model_merged.ort",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-base-en--decoder_model_merged.ort",
+          "size": 109424400,
+          "sha256": "d9d7b333af34bc552580576ddcf248a1c6c839e0d3b43b09afb9376ed009899d"
+        },
+        {
+          "name": "tokens.txt",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-base-en--tokens.txt",
+          "size": 549350,
+          "sha256": "2870d843e14c1e187bf1913a521562a63b53933814bd7f2145120468f494a049"
+        },
+        {
+          "name": "LICENSE",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/moonshine-base-en--LICENSE",
+          "size": 13344,
+          "sha256": "6148d7574a6554b7379b633cfd4c4fe5840c3f548d13bc83e00b52dc6fa00abd"
+        }
+      ],
+      "total_size": 141313910,
+      "released": false
+    },
+    {
+      "id": "whisper-large-v3-turbo-int8",
+      "version": 1,
+      "role": "final",
+      "bench_only": true,
+      "runtime": "sherpa-onnx",
+      "licence": "MIT",
+      "attribution": "Whisper large-v3-turbo by OpenAI, MIT licence.",
+      "config": {
+        "type": "whisper",
+        "encoder": "turbo-encoder.int8.onnx",
+        "decoder": "turbo-decoder.int8.onnx",
+        "tokens": "turbo-tokens.txt",
+        "language": "en"
+      },
+      "files": [
+        {
+          "name": "turbo-encoder.int8.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/whisper-large-v3-turbo-int8--turbo-encoder.int8.onnx",
+          "size": 674716297,
+          "sha256": "b02dcdf54f348741e93fe732b67d933c8dcb6735655f710640143081db38878b"
+        },
+        {
+          "name": "turbo-decoder.int8.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/whisper-large-v3-turbo-int8--turbo-decoder.int8.onnx",
+          "size": 361080764,
+          "sha256": "20accd02388482eb3a46bd615631adfdc85e1eb2c7db9ea3f02a40ffe6b81547"
+        },
+        {
+          "name": "turbo-tokens.txt",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/whisper-large-v3-turbo-int8--turbo-tokens.txt",
+          "size": 816730,
+          "sha256": "b34b360dbb493e781e479794586d661700670d65564001f23024971d1f2fa126"
+        }
+      ],
+      "total_size": 1036613791,
+      "released": false
+    },
+    {
+      "id": "whisper-small-en-int8",
+      "version": 1,
+      "role": "final",
+      "bench_only": true,
+      "runtime": "sherpa-onnx",
+      "licence": "MIT",
+      "attribution": "Whisper small.en by OpenAI, MIT licence.",
+      "config": {
+        "type": "whisper",
+        "encoder": "small.en-encoder.int8.onnx",
+        "decoder": "small.en-decoder.int8.onnx",
+        "tokens": "small.en-tokens.txt",
+        "language": "en"
+      },
+      "files": [
+        {
+          "name": "small.en-encoder.int8.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/whisper-small-en-int8--small.en-encoder.int8.onnx",
+          "size": 112442483,
+          "sha256": "8bdac288f369aa94ee2194059238c465ed82ea9d47ee8fa4a8c0a891873e462f"
+        },
+        {
+          "name": "small.en-decoder.int8.onnx",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/whisper-small-en-int8--small.en-decoder.int8.onnx",
+          "size": 262223042,
+          "sha256": "710ccf890e10f3faa15f51ec346081a2723c9f3adb6e4da81c6573a5a6f877fb"
+        },
+        {
+          "name": "small.en-tokens.txt",
+          "url": "https://github.com/cad861/hushtype-models/releases/download/models-v1/whisper-small-en-int8--small.en-tokens.txt",
+          "size": 835554,
+          "sha256": "306cd27f03c1a714eca7108e03d66b7dc042abe8c258b44c199a7ed9838dd930"
+        }
+      ],
+      "total_size": 375501079,
+      "released": false
+    }
+  ],
+  "tiers": {
+    "full": {
+      "vad": "silero-vad",
+      "final": "parakeet-tdt-0.6b-v3-int8",
+      "preview": "moonshine-tiny-en",
+      "cleanup": "qwen3-1.7b-q4_k_m"
+    },
+    "light": {
+      "vad": "silero-vad",
+      "final": "moonshine-base-en",
+      "preview": "moonshine-tiny-en",
+      "cleanup": "rules"
+    }
+  },
+  "tiers_provisional": true
+}
